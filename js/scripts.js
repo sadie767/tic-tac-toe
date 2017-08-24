@@ -30,7 +30,7 @@ function checker() {
     alert("Player1 Wins")
   } else if (box3 + box6 + box9 === 3) {
     alert("Player1 Wins")
-  }  else if (box1 + box5 + box9 === 3) {
+  } else if (box1 + box5 + box9 === 3) {
     alert("Player1 Wins")
   } else if (box3 + box5 + box7 === 3) {
     alert("Player1 Wins")
@@ -83,31 +83,40 @@ $(document).ready(function() {
   $("#4").click(function() {
     switchPlayer()
     $("#4").text(player);
+    box4 = player
     checker()
   });
   $("#5").click(function() {
     switchPlayer()
     $("#5").text(player);
+    box5 = player
     checker()
   });
   $("#6").click(function() {
     switchPlayer()
     $("#6").text(player);
+    box6 = player
     checker()
   });
   $("#7").click(function() {
     switchPlayer()
     $("#7").text(player);
+    box7 = player
     checker()
   });
   $("#8").click(function() {
     switchPlayer()
     $("#8").text(player);
+    box8 = player
     checker()
   });
   $("#9").click(function() {
     switchPlayer()
     $("#9").text(player);
+    box9 = player
     checker()
+  });
+  $("#reset").click(function() {
+    location.reload();
   });
 });
